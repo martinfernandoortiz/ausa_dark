@@ -1,0 +1,128 @@
+/* ========================================== */
+/* RANGO 1: ESCALA LEJANA (4500 a 8500)       */
+/* ========================================== */
+
+/* Puntos Lejanos - Zoom Medio = 1 */
+[@scale >= 4100] [@scale <= 8500] [zoom_medio = 1] {
+  mark: symbol(circle);
+  mark-size: 7;
+  fill: #918d84;
+  stroke: #141312;
+  stroke-width: 0.5;
+}
+
+/* Puntos Lejanos - Zoom Medio = 2 */
+[@scale >= 4500] [@scale <= 8500] [zoom_medio = 2] {
+  mark: symbol(circle);
+  mark-size: 7;
+  fill: #918d84;
+  stroke: #141312;
+  stroke-width: 0.5;
+}
+
+/* Etiquetas Lejanas (Regla 000: Zoom 1 y Bandas A/N) */
+[@scale >= 4500] [@scale <= 8500] [zoom_medio = 1] [cod_banda = 'A' or cod_banda = 'N'] {
+  label: [pk];
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-fill: #323232;
+  halo-radius: 2px;
+  halo-fill: #fafafa;
+  label-anchor: 1 0;
+  label-offset: [offset_x] [offset_y];
+}
+
+/* Etiquetas Lejanas (Regla 500: Zoom 2 y Bandas B/S) */
+[@scale >= 4500] [@scale <= 8500] [zoom_medio = 2] [cod_banda = 'B' or cod_banda = 'S'] {
+  label: [pk];
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-fill: #323232;
+  halo-radius: 2px;
+  halo-fill: #fafafa;
+  label-anchor: 1 0;
+  label-offset: [offset_x] [offset_y];
+}
+
+/* ========================================== */
+/* RANGO 2: ESCALA MEDIA (1500 a 4500)        */
+/* ========================================== */
+
+/* Puntos Intermedios */
+[@scale >= 1500] [@scale < 4500] [zoom_medioalto IN (1, 2, 3, 4)] {
+  mark: symbol(circle);
+  mark-size: 7;
+  fill: #918d84;
+  stroke: #141312;
+  stroke-width: 0.5;
+}
+
+/* Etiquetas Intermedias (Bandas A y N) */
+[@scale >= 1500] [@scale < 4500] [zoom_medioalto IN (2, 4)] [cod_banda = 'A' or cod_banda = 'N'] {
+  label: [pk];
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-fill: #323232;
+  halo-radius: 2px;
+  halo-fill: #fafafa;
+  label-anchor: 0 1;
+  label-offset: [offset_x] [offset_y];
+}
+
+/* Etiquetas Intermedias (Bandas B y S con Rotación) */
+[@scale >= 1500] [@scale < 4500] [zoom_medioalto IN (1, 3)] [cod_banda = 'B' or cod_banda = 'S'] {
+  label: [pk];
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-fill: #323232;
+  halo-radius: 2px;
+  halo-fill: #fafafa;
+  label-anchor: 0.5 0.5;
+  label-offset: [offset_x] [offset_y];
+}
+
+/* ========================================== */
+/* RANGO 3: ESCALA CERCANA (1 a 1500)         */
+/* ========================================== */
+
+/* Centenas Cercanas */
+[@scale >= 1] [@scale < 1500] [zoom_alto IN (1, 2)] {
+  mark: symbol(circle);
+  mark-size: 8;
+  fill: #918d84;
+  stroke: #141312;
+  stroke-width: 0.5;
+}
+
+/* Cincuenta Cercanas */
+[@scale >= 1] [@scale < 1500] [zoom_alto = 3] {
+  mark: symbol(circle);
+  mark-size: 6;
+  fill: #918d84;
+  stroke: #141312;
+  stroke-width: 0.5;
+}
+
+/* Etiquetas Cercanas (Bandas B y S) */
+[@scale >= 1] [@scale < 1500] [zoom_alto = 2] [cod_banda = 'B' or cod_banda = 'S'] {
+  label: [pk];
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-fill: #323232;
+  halo-radius: 2px;
+  halo-fill: #fafafa;
+  label-anchor: 1 0;
+  label-offset: [offset_x] [offset_y];
+}
+
+/* Etiquetas Cercanas (Bandas A y N) */
+[@scale >= 1] [@scale < 1500] [zoom_alto = 1] [cod_banda = 'A' or cod_banda = 'N'] {
+  label: [pk];
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-fill: #323232;
+  halo-radius: 2px;
+  halo-fill: #fafafa;
+  label-anchor: 0.5 1;
+  label-offset: [offset_x] [offset_y];
+}
