@@ -24,10 +24,11 @@
 [@scale >= 4500] [@scale <= 8500] [zoom_medio = 1] [cod_banda = 'A' or cod_banda = 'N'] {
   label: [pk];
   font-family: 'Open Sans';
-  font-size: 11px;
-  font-fill: #323232;
+  font-size: 10px;
   halo-radius: 2px;
   halo-fill: #fafafa;
+  font-fill: #323232;
+
   label-anchor: 1 0;
   label-offset: [offset_x] [offset_y];
 }
@@ -36,10 +37,11 @@
 [@scale >= 4500] [@scale <= 8500] [zoom_medio = 2] [cod_banda = 'B' or cod_banda = 'S'] {
   label: [pk];
   font-family: 'Open Sans';
-  font-size: 11px;
-  font-fill: #323232;
+  font-size: 10px;
   halo-radius: 2px;
   halo-fill: #fafafa;
+  font-fill: #323232;
+
   label-anchor: 1 0;
   label-offset: [offset_x] [offset_y];
 }
@@ -61,7 +63,7 @@
 [@scale >= 1500] [@scale < 4500] [zoom_medioalto IN (2, 4)] [cod_banda = 'A' or cod_banda = 'N'] {
   label: [pk];
   font-family: 'Open Sans';
-  font-size: 13px;
+  font-size: 11px;
   font-fill: #323232;
   halo-radius: 2px;
   halo-fill: #fafafa;
@@ -74,9 +76,10 @@
   label: [pk];
   font-family: 'Open Sans';
   font-size: 11px;
-  font-fill: #323232;
   halo-radius: 2px;
   halo-fill: #fafafa;
+  font-fill: #323232;
+
   label-anchor: 0.5 0.5;
   label-offset: [offset_x] [offset_y];
 }
@@ -120,9 +123,10 @@
   label: [pk];
   font-family: 'Open Sans';
   font-size: 13px;
-  font-fill: #323232;
   halo-radius: 2px;
   halo-fill: #fafafa;
+  font-fill: #323232;
+
   label-anchor: 0.5 1;
   label-offset: [offset_x] [offset_y];
 }

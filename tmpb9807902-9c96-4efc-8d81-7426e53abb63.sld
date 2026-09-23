@@ -60,7 +60,7 @@
             </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Open Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11</sld:CssParameter>
+              <sld:CssParameter name="font-size">13</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
             </sld:Font>
@@ -321,7 +321,7 @@
             </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Open Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">10</sld:CssParameter>
+              <sld:CssParameter name="font-size">11</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
             </sld:Font>
@@ -396,7 +396,7 @@
             </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Open Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">10</sld:CssParameter>
+              <sld:CssParameter name="font-size">11</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
             </sld:Font>
@@ -477,7 +477,7 @@
             </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Open Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11</sld:CssParameter>
+              <sld:CssParameter name="font-size">13</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
             </sld:Font>
@@ -562,7 +562,7 @@
             </sld:Label>
             <sld:Font>
               <sld:CssParameter name="font-family">Open Sans</sld:CssParameter>
-              <sld:CssParameter name="font-size">11</sld:CssParameter>
+              <sld:CssParameter name="font-size">13</sld:CssParameter>
               <sld:CssParameter name="font-style">normal</sld:CssParameter>
               <sld:CssParameter name="font-weight">normal</sld:CssParameter>
             </sld:Font>
